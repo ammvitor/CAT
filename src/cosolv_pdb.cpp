@@ -113,7 +113,6 @@ void cosolv_pdb::topology_parser(string itp_file){
 
 
 void cosolv_pdb::xyz_parser(string pdb_file, int protein_n){
-
 char buffer[900];
 FILE * fpdb_rec;
 fpdb_rec = fopen (pdb_file.c_str(),"r");
@@ -149,10 +148,12 @@ fgets(buffer, 100, fpdb_rec);
 
          while(buffer[0] != 'T'){
 
-            //cout << buffer[0] << endl;
-            for(int k =0; k< this->atom_names.size(); k++) {
 
+            for(int k =0; k< this->atom_names.size(); k++) {
                 string s(buffer);
+                if(s.substr(0,3) != "TER"){
+
+
                  /*
                  sscanf (s.substr(0, s.size() - 2).c_str(),"%s %d %s %s %d %lf %lf %lf %d %d ",
                     &atom_name,&atom_index,&atom_name,&resname,&res_index,&x,&y,&z,&buf,&buf);
@@ -192,7 +193,7 @@ fgets(buffer, 100, fpdb_rec);
                  //cout << s.substr(0, 4) << "a "  <<  s.substr(4, 8) << "b " << s.substr(11, 6) << "c " << s.substr(16, 4) << "d " << s.substr(20, 2) << "e " <<  s.substr(22, 8) <<
                         //"f " << s.substr(30, 8) << "g " << s.substr(38, 8) << "h " <<  s.substr(46, 8) << endl;
 
-
+                }
 
             }
             cog.push_back(x_aver/this->atom_names.size());

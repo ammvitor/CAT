@@ -1,0 +1,20 @@
+Covariance analysis log, written Wed Aug  8 13:53:01 2018
+
+Program: covar
+Working directory: /home/jvscunha/hierarchical_clustering/Hierarchical_clustering/test
+
+Read 2501 frames from md_0_1_nojump_50ns.pdb (time 0 to 50000 ps)
+Read reference structure for fit from md_0_1_nojump_50ns.pdb
+
+Analysis group is 'Protein' (417 atoms)
+Fit group is 'Protein' (417 atoms)
+Analysis is non-mass weighted
+Fit is non-mass weighted
+Diagonalized the 1251x1251 covariance matrix
+Trace of the covariance matrix before diagonalizing: 197.139
+Trace of the covariance matrix after diagonalizing: 197.139
+
+Wrote 1251 eigenvalues to eigenval.xvg
+Wrote reference structure to eigenvec.trr
+Wrote average structure to average.pdb and eigenvec.trr
+Wrote eigenvectors 1 to 1251 to eigenvec.trr

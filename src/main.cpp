@@ -19,6 +19,54 @@
 
 using namespace std;
 
+/*
+( \
+ \ \
+ / /                |\\
+/ /     .-`````-.   / ^`-.
+\ \    /         \_/  {|} `o
+ \ \  /   .---.   \\ _  ,--'
+  \ \/   /     \,  \( `^^^
+   \   \/\      (\  )
+    \   ) \     ) \ \
+jgs  ) /__ \__  ) (\ \___
+    (___)))__))(__))(__)))
+*/
+
+//@@%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@
+//@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@@@@@@@@@@@@@@@@@@@@@@@@
+//@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&@@@&&&&&&&///////////////////////////////////////&&&&&&&&&@@@@@@@@@@@@@@@@@@@@@
+//@@************************%%%%%%%%%%%%%%%%%%%%%%%%************************#%%&@@@&&&&////&/(/%##(%&/@/@#&/@/&/(@/@##%/////////////&&&&&&@@@@@@@@@@@@@@@@@@@@@
+//@@************************%%%%%%%%%%%%%%%%%%%%%%%%************************#%%&@@@&&&&//////&/%##%#&(@/@##/@/&/(&/@##&//(//////////&&&&&&@@@@@@@@@@@@@@@@@@@@@
+//@@***************************************************************************&@@@&&&///////////////////////////////////////////////////&&&@@@@@@@@@@@@@@@@@@@@@
+//@@***************************************************************************&@@@&&&//////////////////////////////((((((///////////////&&&@@@@@@@@@@@@@@@@@@@@@
+//@@***************************************************************************&@@@&&&//////////////////////////////@@@@@@///////////////&&&@@@@@@@@@@@@@@@@@@@@@
+//@@........................************************........................,**&@@@&&&///////(##/////##(/////////@@@/*****@@@////////////&&&@@@@@@******#@@@@@@@@
+//@@........................................................./%%%%%%%%%%%,.....%@@@&&&//////////(###(////////////@@@/*****(((%%%/////////&&&@@@#((******#@@@@@@@@
+//@@.........................................................(@@@@@@@@@@@*.....%@@@&&&////////((#(/(#(///////////@@@/*******/&@@/////////&&&@@@/********#@@@@@@@@
+//@@.........................................................(@@(****#@@@@@..%@@@&&&///////###/////##(/////////@@@/***********@@@@@@@@@@@@(***********#@@@@@@@@
+//@@,,,,,,,,,,,,,,,,,,,,,,,,........................,,,,,,,,,(@@%##/**(%%@@@(//&@@@&&&//////////####(////////////@@@/***********%%%%%%%%%%%%/***********#@@@@@@@@
+//@@************************........................*********#@@@@@(*****&@@@@@@@@@&&&////////((#(/##(///////////@@@/***********************************#@@@@@@@@
+//@@************************************************************&@@@@@&*****&@@@@@@&&&///////(##////(#%///////&@@****************************,,*,,*,,******@@@@@@
+//@@************************************************************///&@@@&&(*//(&@@@&&&//////////(###(/////////@@@********  .%&&**********,,***.  &&&*,,***@@@@@@
+//@@***************************************************************&@@@@@(****&@@@&&&////////((#(/##(////////@@@********   %@@***************,,,@@@(*****@@@@@@
+//@@((((((((((((((((((((((((***********************((((((((((((((((((#@@@@@@@@@@@@&&&///////###/////#%///////@@@*********@@@@@@*******,/@@(*,*@@@(*****@@@@@@
+//@@((((((((((((((((((((((((////////////////////////(((((((((((((((((((#####@@@@@@@&&&////////////////////////@@@*********((((((******,*((/**(((,,***,*@@@@@@
+//@@((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((&@@@@@@&&&////////////////////////@@@***,,,,,,**************,*************,,,,,@@@@@@
+//@@(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((&@@@&&&&&&/////////////////////@@@***,,,,,,**/&@@(****@%*******@@@***,,*,,@@@@@@
+//@@(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((&@@@&&&&&&((///////////////////(((###********/&@@%#####@%,*,,,##@@@****,**##@@@@@@
+//@@########################((((((((((((((((((((((((########################(((&@@@&&&&&&&/////////////////////@@@/*******/&@@@@@@/,,*,,*,,*,,*,,,,***#@@@@@@@@
+//@@########################################################################@@@@@@@@@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@@***********,,,,,*,,***********&@@@@@@@@@@@
+//@@#####################################################################%%%&&&&&&&&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@@((((((((//*,*****/((((((((((((&@@@@@@@@@@@
+//@@#####################################################################&@@(********@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,,,,,,,*@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@########################@@@@@@@@@@@@@@@@@@@@@@@@(****(@@@@@@##%@@@******@@@@@@@@@@@@@@@@@@@@@**,,*,,,,/@@@@******@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&%%%%%&@@@@@@@@@@@@%%%%%%@@@@@@@@@@@@@@@@@@@@@%%/,,*,,@@@@@@@%%%%%%@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#%%&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
 
 int main(int argc, char *argv[])
 {
@@ -30,9 +78,9 @@ int main(int argc, char *argv[])
 
     delta_elec_input = 0;
     delta_vdw_input = 0;
-
+    // example of inputs:
     //-i /media/jvscunha/My\ Passport/snaps/list_snaps1.dat -c 10 -n 10 -t /media/jvscunha/My\ Passport/snaps/list_snaps1.dat/topol.top -e 0 -s /media/jvscunha/My\ Passport/snaps/list_snaps1.dat/acetaldehyde_GMX.itp -v 0.5 -e 0.5 -o /home/jvscunha/snaps1.txt
-    // /home/jvscunha/workspace/Solv_Docking/build-Solv_docking-Desktop_Qt_5_7_0_GCC_64bit-Release/Solv_docking -i list.dat -c 10 -t topol.top -e 6 -v 6 -n 1500 -s Br5_GMX.itp -o output.dat -g 5
+    // /home/jvscunha/workspace/Solv_Docking/Solv_docking/Solv_docking -i list.dat -c 10 -t topol.top -e 6 -v 6 -n 1500 -s Br5_GMX.itp -o output.dat -g 5
     while ((c = getopt(argc, argv, "i:o:c:n:t:v:e:s:h:g:")) != -1)
 
 
@@ -42,14 +90,14 @@ int main(int argc, char *argv[])
                 input_name = string(optarg);
                 break;
             case 'h':
-                printf("Usage %s -i <inputlist> -o <output_distribution> -c <cutoff(angstrom)> -n <nframes> -t <protein_topol_top> -s <cosolv_itp> -e <delta_electrostatic(angstrom)> -v <delta_vdw(angstrom)> \n");
+                printf("Usage %s -i <inputlist> -o <output_distribution> -c <cutoff(angstrom)>  -t <protein_topol_top> -s <cosolv_itp> -e <delta_electrostatic(angstrom)> -v <delta_vdw(angstrom)> \n");
                 exit(1);
             case 'o':
                 output_name = string(optarg);
                 break;
-            case 'n':
-                nframes = stoi(string(optarg));
-                break;
+            //case 'n':
+              //  nframes = stoi(string(optarg));
+                //break;
             case 'c':
                 cutoff = stod(string(optarg));
                 break;
@@ -74,7 +122,7 @@ int main(int argc, char *argv[])
     //-i /home/jvscunha/cosolvent/Isopropylamine/snaps100/list.log -c 10 -n 99 -t /home/jvscunha/cosolvent/Isopropylamine/topol.top -e 0 -s /home/jvscunha/cosolvent/Isopropylamine/snaps100/imidazole_GMX.itp -v 0.5 -e 0.5 -o /home/jvscunha/cosolvent/Isopropylamine/snaps100.txt
 
     cout << "******************************************************************" << endl;
-    cout << "                         CAT                                   " << endl;
+    cout << "                            CAT 0.92                                " << endl;
     cout << "                   Cosolvent Analysis  Tool           " << endl;
     cout << "                    Newcastle University                         " << endl;
     cout << "             Cunha, JVS; Sabanes FZ;  Bronowska, AK              " << endl;
@@ -84,15 +132,6 @@ int main(int argc, char *argv[])
 
 
 
-    cout << "File: " << input_name << endl;
-    cout << "Output: " << output_name << endl;
-    cout << "Number Of Frames: " << nframes << endl;
-    cout << "Cutoff (A) : " << cutoff << endl;
-    cout << "Cosolv itp: " << itp_input << endl;
-    cout << "Protein topol: " << topology_input << endl;
-    cout << "Eletrostatic delta: " << delta_elec_input << endl;
-    cout << "Eletrostatic VdW: " << delta_vdw_input << endl;
- 
 
     string pdb_input;
     string topol_input_string = topology_input;
@@ -129,6 +168,35 @@ int main(int argc, char *argv[])
     vector < double> atom_sphere_i;
 
 
+    ifstream counter(input_name.c_str());
+    string line;
+    int number_of_structures=0;
+
+    if(!counter) {
+      cout << "Cannot open input file.\n";
+      return 1;
+    }
+
+    while(getline(counter, line)) {
+          number_of_structures++;
+  }
+
+    counter.close();
+
+
+  nfiles = number_of_structures;
+
+   cout << "File: " << input_name << endl;
+   cout << "Output: " << output_name << endl;
+   cout << "Number Of Frames: " << nfiles << endl;
+   cout << "Cutoff (A) : " << cutoff << endl;
+   cout << "Cosolv itp: " << itp_input << endl;
+   cout << "Protein topol: " << topology_input << endl;
+   cout << "Eletrostatic delta: " << delta_elec_input << endl;
+   cout << "Eletrostatic VdW: " << delta_vdw_input << endl;
+
+
+
 
     //reader for input list
     for(int i =0; i < nfiles; i++ ){
@@ -140,8 +208,12 @@ int main(int argc, char *argv[])
 
 
 
-    //reading opne file from the list and analyzing it
+    //reading open file from the list and analyzing it
     int filenames_size = filenames.size();
+    //"for" to read the files from the list
+
+
+
     for(int file =0; file < filenames_size; file++){
 
         receptor_pdb* rec_pdb = new receptor_pdb();
@@ -150,14 +222,12 @@ int main(int argc, char *argv[])
 
     pdb_input = filenames[file];
 
-    cout << "Reading file " << file << " " << filenames[file] << '\xd';
+     cout << "Reading file " << file << " " << filenames[file] << '\xd';
+    //call methods to read topol (could be read only once
     rec_pdb->topology_parser(topol_input_string);
     rec_pdb->xyz_parser(filenames[file]);
-
     cov_pdb->topology_parser(itp_input);
-
     cov_pdb->xyz_parser(filenames[file],rec_pdb->total_atoms-1);
-
 
     if(file == 0){
 
@@ -216,29 +286,29 @@ int main(int argc, char *argv[])
         elec = 0;
         count = 0;
         n_inside=0;
-        //protein average structure calculater
+        //protein average structure calculator
         for(int resid_atom = 0; resid_atom < int(rec_pdb->atom_per_resid_xyz[resid].size()); resid_atom++){
             average_structure_perresidue[resid][resid_atom][0] = average_structure_perresidue[resid][resid_atom][0] +rec_pdb->atom_per_resid_xyz[resid][resid_atom][0];
             average_structure_perresidue[resid][resid_atom][1] = average_structure_perresidue[resid][resid_atom][1] +rec_pdb->atom_per_resid_xyz[resid][resid_atom][1];
             average_structure_perresidue[resid][resid_atom][2] = average_structure_perresidue[resid][resid_atom][2] +rec_pdb->atom_per_resid_xyz[resid][resid_atom][2];
          }
-
-
+        
+        
+        //Calculate distances between COGs (centers of geometry)
         for(int cosolv_id =0; cosolv_id < int(cov_pdb->atom_per_resid_xyz.size()); cosolv_id++){
             dcog = sqrt((rec_pdb->residue_cog[resid][0]-cov_pdb->residue_cog[cosolv_id][0])*(rec_pdb->residue_cog[resid][0]-cov_pdb->residue_cog[cosolv_id][0])+
                         (rec_pdb->residue_cog[resid][1]-cov_pdb->residue_cog[cosolv_id][1])*(rec_pdb->residue_cog[resid][1]-cov_pdb->residue_cog[cosolv_id][1])+
                         (rec_pdb->residue_cog[resid][2]-cov_pdb->residue_cog[cosolv_id][2])*(rec_pdb->residue_cog[resid][2]-cov_pdb->residue_cog[cosolv_id][2]));
-
+            //cutoff = sphere radius assigned in the beginning
             if(dcog < cutoff){
 
                     atomic_per_residue[resid][0] = atomic_per_residue[resid][0] + cov_pdb->residue_cog[cosolv_id][0];
                     atomic_per_residue[resid][1] = atomic_per_residue[resid][1] + cov_pdb->residue_cog[cosolv_id][1];
                     atomic_per_residue[resid][2] = atomic_per_residue[resid][2] + cov_pdb->residue_cog[cosolv_id][2];
-
-
                     n_inside++;
                     count++;
-                    //interaction calculator
+                    
+                    //interaction calculator using the hybrid score function
                     for(int resid_atom = 0; resid_atom < int(rec_pdb->atom_per_resid_xyz[resid].size()); resid_atom++){
 
                         for(int cosolv_atom = 0; cosolv_atom < int(cov_pdb->atom_per_resid_xyz[cosolv_id].size()); cosolv_atom++){
@@ -251,6 +321,8 @@ int main(int argc, char *argv[])
                             sigma_ij = (rec_pdb->rec_epsilon[resid][resid_atom]+cov_pdb->atom_epsilon[cosolv_atom])/2;
                             tvdw = 4*epsilon_ij*(pow((sigma_ij/(dr+d_vdw)),12) - pow((sigma_ij/(dr+d_vdw)),6));
                             telec = (138.935458*rec_pdb->parameters_charges[resid][resid_atom]*cov_pdb->charges[cosolv_atom])/(dr+d_elec);
+                            
+                            //cuttoff for extreme atomic classes
                             if(vdw_cutoff > vdw){
                                 vdw = vdw + tvdw;
                                 elec = elec + telec;
@@ -288,8 +360,9 @@ int main(int argc, char *argv[])
         count_final[i] = count_final[i] + count_per_residue[i]/nfiles;
     }
 
+    
+    
     //average protein structure printer
-
 
     if(file == int(filenames.size()-1)){
         FILE * output_average;
@@ -299,8 +372,6 @@ int main(int argc, char *argv[])
         for(int resid = 0; resid < int(rec_pdb->atom_per_resid_xyz.size()); resid++){
             for(int resid_atom = 0; resid_atom < int(rec_pdb->atom_per_resid_xyz[resid].size()); resid_atom++){
                 atom_id++;
-                //fprintf (output_average, "%10.5f %10.5f %10.5f\n",average_structure_perresidue[resid][resid_atom][0]/nfiles, average_structure_perresidue[resid][resid_atom][1]/nfiles, average_structure_perresidue[resid][resid_atom][2]/nfiles);
-
                 if(count_final[resid] >= 1){
                 fprintf(output_average, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                          "ATOM",
@@ -309,7 +380,7 @@ int main(int argc, char *argv[])
                          " ",
                          rec_pdb->residue_name_per_atom[resid][resid_atom].c_str(),
                          "A",
-                         resid+1+rec_pdb->residue_id_per_atom[0][0],
+                         resid+rec_pdb->residue_id_per_atom[0][0],
                          " ",
                          average_structure_perresidue[resid][resid_atom][0]/nfiles,
                          average_structure_perresidue[resid][resid_atom][1]/nfiles,
@@ -317,6 +388,8 @@ int main(int argc, char *argv[])
                          1.0,
                          (elec_final[resid]+vdw_final[resid])/count_final[resid]);
                   }
+                
+                
                 if(count_final[resid] < 1){
                     fprintf(output_average, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                              "ATOM",
@@ -325,7 +398,7 @@ int main(int argc, char *argv[])
                              " ",
                              rec_pdb->residue_name_per_atom[resid][resid_atom].c_str(),
                              "A",
-                             resid+1+rec_pdb->residue_id_per_atom[0][0],
+                             resid+rec_pdb->residue_id_per_atom[0][0],
                              " ",
                              average_structure_perresidue[resid][resid_atom][0]/nfiles,
                              average_structure_perresidue[resid][resid_atom][1]/nfiles,
@@ -365,10 +438,11 @@ int main(int argc, char *argv[])
 
 
 
-
-
-
    cout << "Averages calculated" << endl;
+
+   //First Cycle of calculations done - to reduce ram memory usage - since the traj size is huge, it rereads the traj to calculate the variance
+
+
    cout << "Calculating Variances" << endl;
 
 
@@ -481,6 +555,8 @@ int main(int argc, char *argv[])
 
    }
 
+
+
     for(int i =0; i < int(vdw_final_var.size()); i++){
         vdw_final_var[i] =  sqrt(vdw_final_var[i]);
         elec_final_var[i] = sqrt(elec_final_var[i]);
@@ -507,13 +583,10 @@ int main(int argc, char *argv[])
     }
 
 
-    cout << "Destibution calculated:" << output_name << '\xd';
+    cout << "Destribution calculated:" << output_name << '\xd';
 
     vector < vector < double> > final_ball_residue;
     vector < double > xyz_ball;
-    //double ball_x_final_average =0;
-    //ouble ball_y_final_average =0;
-    //double ball_z_final_average =0;
     xyz_ball.push_back(0);
     xyz_ball.push_back(0);
     xyz_ball.push_back(0);
@@ -526,7 +599,6 @@ int main(int argc, char *argv[])
 
 
     vector < int> normalizer;
-    //int normalizer_int = 0;
     for(int resid = 0; resid < int(atomic_spheres_average[0].size()); resid++){
         normalizer.push_back(0);
     }
@@ -558,7 +630,7 @@ int main(int argc, char *argv[])
 
 
     FILE * output_balls;
-    output_balls = fopen ("all_spheres.pdb","w");
+    output_balls = fopen ("all_spheres_count_variance.pdb","w");
     vector < vector < double> > sphere_bkp;
 
     for(int i =0; i < int(final_ball_residue.size()); i++){
@@ -583,8 +655,6 @@ int main(int argc, char *argv[])
 
         sphere_bkp.push_back(final_ball_residue[i]);
     }
-
-
 
 
 
@@ -717,12 +787,12 @@ int main(int argc, char *argv[])
             if(cluster_end[i][0] != 0){
                 fprintf(output_cluster_top, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                          "ATOM",
-                         i,
+                         i+initial_residue,
                          "C",
                          " ",
                          "C",
                          "A",
-                         i,
+                         i+initial_residue,
                          " ",
                          sorted_clusters[i][0],
                          sorted_clusters[i][1],
@@ -739,7 +809,7 @@ int main(int argc, char *argv[])
             if(cluster_end[i][0] != 0){
                 fprintf(output_cluster_top, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                          "ATOM",
-                         i,
+                         i+initial_residue,
                          "C",
                          " ",
                          "C",
@@ -765,7 +835,7 @@ int main(int argc, char *argv[])
         if(cluster_end[i][0] != 0){
             fprintf(output_cluster, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                      "ATOM",
-                     i,
+                     i+initial_residue,
                      "C",
                      " ",
                      "C",
@@ -790,7 +860,7 @@ int main(int argc, char *argv[])
         if(cluster_end[i][0] != 0){
             fprintf(output_energy, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                      "ATOM",
-                     i,
+                     i+initial_residue,
                      "C",
                      " ",
                      "C",
@@ -817,7 +887,7 @@ int main(int argc, char *argv[])
         if(cluster_end[i][0] != 0){
             fprintf(output_contact, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                      "ATOM",
-                     i,
+                     i+initial_residue,
                      "C",
                      " ",
                      "C",
@@ -853,7 +923,7 @@ int main(int argc, char *argv[])
 
                          fprintf(output_cluster_spheres_regions, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                          "ATOM",
-                         i+1+initial_residue,
+                         i+initial_residue,
                          "C",
                          " ",
                          "C",
@@ -891,7 +961,7 @@ int main(int argc, char *argv[])
 
                          fprintf(output_cluster_spheres_regions, "%4s%7d %4s%1s%3s %1s%4d%1s   %8.3f%8.3f%8.3f%6.2f%6.2f\n",
                          "ATOM",
-                         i,
+                         i+initial_residue,
                          "C",
                          " ",
                          "C",
